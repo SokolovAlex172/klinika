@@ -1,3 +1,9 @@
+<?php
+    require_once 'connect.php';
+    $goods = mysqli_query($connect, "SELECT * FROM `klinika`");
+    $goods = mysqli_fetch_all($goods);
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -61,21 +67,24 @@
         <section class="slider">
             <div class="mySwiper slider__inner">
                 <div class="swiper-wrapper">
+                    <?php
+                    foreach ($goods as $item) {
+                    ?>
                     <div class="swiper-slide">
                         <div class="slider__container container">
                             <div class="slider__container-info">
                                 <div class="slider__info">
-                                    <h2 class="slider__info-title">Check-UP</h2>
-                                    <h3 class="slider__info-subtitle">для мужчин</h3>
+                                    <h2 class="slider__info-title"><?php echo $item[1] ?></h2>
+                                    <h3 class="slider__info-subtitle"><?php echo $item[2] ?></h3>
                                     <ul class="slider__list">
-                                        <li class="slider_list-item">Гормональный скрининг</li>
-                                        <li class="slider_list-item">Тестостерон</li>
-                                        <li class="slider_list-item">Свободный тестостерон</li>
-                                        <li class="slider_list-item">Глобулин, связывающий половые гормоны</li>
+                                        <li class="slider_list-item"><?php echo $item[3] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[4] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[5] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[6] ?></li>
                                     </ul>
                                     <div class="slider__price">
-                                        <di class="slider__price-all">Всего <span>2800</span>₽</di>
-                                        <div class="slider__price-old"><span>3500</span>₽</div>
+                                        <div class="slider__price-all"><?php echo $item[7] ?> <span><?php echo $item[8] ?></sanp><?php echo $item[9]?></div>
+                                        <div class="slider__price-old"><sanp><?php echo $item[10] ?> </sanp><?php echo $item[11] ?> </div>
                                     </div>
                                 </div>
                                 <div class="slider__buttons">
@@ -90,17 +99,17 @@
                         <div class="slider__container container">
                             <div class="slider__container-info">
                                 <div class="slider__info">
-                                    <h2 class="slider__info-title">Check-UP</h2>
-                                    <h3 class="slider__info-subtitle">для мужчин</h3>
+                                    <h2 class="slider__info-title"><?php echo $item[1] ?></h2>
+                                    <h3 class="slider__info-subtitle"><?php echo $item[2] ?></h3>
                                     <ul class="slider__list">
-                                        <li class="slider_list-item">Гормональный скрининг</li>
-                                        <li class="slider_list-item">Тестостерон</li>
-                                        <li class="slider_list-item">Свободный тестостерон</li>
-                                        <li class="slider_list-item">Глобулин, связывающий половые гормоны</li>
+                                        <li class="slider_list-item"><?php echo $item[3] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[4] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[5] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[6] ?></li>
                                     </ul>
                                     <div class="slider__price">
-                                        <di class="slider__price-all">Всего <span>2800</span>₽</di>
-                                        <div class="slider__price-old">3500₽</div>
+                                        <div class="slider__price-all"><?php echo $item[7] ?> <span><?php echo $item[8] ?></sanp><?php echo $item[9]?></div>
+                                        <div class="slider__price-old"><sanp><?php echo $item[10] ?> </sanp><?php echo $item[11] ?> </div>
                                     </div>
                                 </div>
                                 <div class="slider__buttons">
@@ -115,17 +124,17 @@
                         <div class="slider__container container">
                             <div class="slider__container-info">
                                 <div class="slider__info">
-                                    <h2 class="slider__info-title">Check-UP</h2>
-                                    <h3 class="slider__info-subtitle">для мужчин</h3>
+                                    <h2 class="slider__info-title"><?php echo $item[1] ?></h2>
+                                    <h3 class="slider__info-subtitle"><?php echo $item[2] ?></h3>
                                     <ul class="slider__list">
-                                        <li class="slider_list-item">Гормональный скрининг</li>
-                                        <li class="slider_list-item">Тестостерон</li>
-                                        <li class="slider_list-item">Свободный тестостерон</li>
-                                        <li class="slider_list-item">Глобулин, связывающий половые гормоны</li>
+                                        <li class="slider_list-item"><?php echo $item[3] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[4] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[5] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[6] ?></li>
                                     </ul>
                                     <div class="slider__price">
-                                        <di class="slider__price-all">Всего <span>2800</span>₽</di>
-                                        <div class="slider__price-old">3500₽</div>
+                                        <div class="slider__price-all"><?php echo $item[7] ?> <span><?php echo $item[8] ?></sanp><?php echo $item[9]?></div>
+                                        <div class="slider__price-old"><sanp><?php echo $item[10] ?> </sanp><?php echo $item[11] ?> </div>
                                     </div>
                                 </div>
                                 <div class="slider__buttons">
@@ -136,6 +145,34 @@
                             <img class="slider__image" src="./image/doctor-working.jpg" alt="картинка слайдера">
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="slider__container container">
+                            <div class="slider__container-info">
+                                <div class="slider__info">
+                                    <h2 class="slider__info-title"><?php echo $item[1] ?></h2>
+                                    <h3 class="slider__info-subtitle"><?php echo $item[2] ?></h3>
+                                    <ul class="slider__list">
+                                        <li class="slider_list-item"><?php echo $item[3] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[4] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[5] ?></li>
+                                        <li class="slider_list-item"><?php echo $item[6] ?></li>
+                                    </ul>
+                                    <div class="slider__price">
+                                        <div class="slider__price-all"><?php echo $item[7] ?> <span><?php echo $item[8] ?></sanp><?php echo $item[9]?></div>
+                                        <div class="slider__price-old"><sanp><?php echo $item[10] ?> </sanp><?php echo $item[11] ?> </div>
+                                    </div>
+                                </div>
+                                <div class="slider__buttons">
+                                    <botton class="button-green slider__button" type="button">Записаться</botton>
+                                    <button class="button-transparent slider__button" type="button">Подробнее</button>
+                                </div>
+                            </div>
+                            <img class="slider__image" src="./image/doctor-working.jpg" alt="картинка слайдера">
+                        </div>
+                    </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
             <div class="slider__nav">
