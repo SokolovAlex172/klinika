@@ -108,7 +108,18 @@
     }
 }
 
-
+.header__callback-number::before {
+    content: '';
+    background-image: url(../../image/icons/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: -37px;
+    top: -2px;
+    height: 28px;
+    width: 28px;
+}
 
 @media (max-width: 768px) {
     .header__callback-number::before {
