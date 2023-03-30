@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #364844;
+}
+
+.container {
+    max-width: 1175px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 18px 0 17px;
+}
+
+
+.button-green {
+    background-color: #0DBC91;
+    border-radius: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-transparent {
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: #0DBC91 solid 1px;
+    color: #0DBC91;
+}
+.button-white {
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #0DBC91;
+    background: #F6F6F6;
+}

@@ -1,0 +1,33 @@
+.swiper-button-prev::after {
+    content: " " !important;
+}
+
+.swiper-button-next::after {
+    content: " " !important;
+}
+
+.swiper-pagination {
+    font-size: 18px;
+    line-height: 23px;
+
+}
+
+.swiper-pagination-total {
+    color: #C0C0C0;
+}
+
+.swiper-pagination {
+    display: flex;
+}
+
+.image-next {
+    position: absolute;
+    left: 93px;
+    top: -5px;
+}
+
+.image-prev {
+    position: absolute;
+    right: 72px;
+    top: -13px;
+}

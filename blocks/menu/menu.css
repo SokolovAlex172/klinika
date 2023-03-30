@@ -1,0 +1,48 @@
+.menu-btn {
+    min-width: 37px;
+    height: 26px;
+    margin-right: 43px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 4;
+}
+@media (max-width: 768px) {
+    .menu-btn{
+        display: flex;
+    }
+}
+@media (max-width: 576px) {
+    .menu-btn{
+        margin-right: 23px;
+    }
+}
+
+.menu-btn span {
+    background: #1FA181;
+    height: 4px;
+    width: 36px;
+    transition: all 0.5s;
+    position: absolute;
+    
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 4px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(0, 0%) rotate(45deg);  
+  }
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(0, 0%) rotate(-45deg); 
+  }
