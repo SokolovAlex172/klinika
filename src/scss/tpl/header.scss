@@ -25,20 +25,18 @@
     display: flex;
 }
 
-.header__logo {}
-
 @media (min-width: 769px) {
     .header__logo {
-        min-width: 91px;
-        min-height: 27px;
-        padding-right: 44px;
+        min-width: 80px;
+        min-height: 29px;
+        padding-right: 42px;
     }
 }
 
 @media (max-width: 768px) {
     .header__logo {
         max-width: 62px;
-        max-height: 19px;
+        max-height: 26px;
     }
 }
 
@@ -55,7 +53,7 @@
 
 .header__location::before {
     content: '';
-    background-image: url(../../image/icons/location.svg);
+    background-image: url(../image/icons/location.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -68,7 +66,7 @@
 
 
 .header__location-city {
-    margin: 0;
+    margin: 0 0 -3px;
     width: 111px;
 }
 
@@ -98,7 +96,7 @@
     line-height: 24px;
     color: #364844;
     text-decoration: none;
-    margin-right: 35px;
+    margin-right: 31px;
 }
 
 @media (max-width: 768px) {
@@ -110,7 +108,7 @@
 
 .header__callback-number::before {
     content: '';
-    background-image: url(../../image/icons/whatsapp.svg);
+    background-image: url(../image/icons/whatsapp.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -128,7 +126,7 @@
 }
 
 .header__button {
-    padding: 11px 24px;
+    padding: 12px 24px;
 }
 
 @media (max-width: 768px) {
@@ -161,7 +159,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 15px;
         background: rgba(69, 146, 127, 0.9);
         backdrop-filter: blur(2px);
         transform: translateX(-100%);

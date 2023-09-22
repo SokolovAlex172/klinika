@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="src/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
@@ -225,7 +225,7 @@
             <div class="form__section">
             <input type="email" class="form__input"placeholder="Ваша почта"  minlength="2" maxlength="30" required>
           </div>
-            <button class="form__submit" type="submit">Создать</button>
+            <button class="form__submit" type="submit">Записаться</button>
           </form>
         </div>
       </div>

@@ -10,47 +10,50 @@
 .slider__inner {
     overflow: hidden;
     margin-bottom: 160px;
-}
-
-@media (max-width: 768px) {
-    .slider__inner {
-        margin-bottom: 100px;
+    @media (max-width: 768px) {
+        margin-bottom: 92px;
     }
 }
+
 
 .slider__container {
     display: flex;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-
-}
-@media (max-width: 355px) {
-    .slider__container  {
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+    @media (max-width: 355px) {
         margin-right: 17px;
     }
 }
+
 
 .slider__container-info {
     display: flex;
     flex-direction: column;
     background-color: #E2F0EF;
-    border-radius: 5px;
-    height: 440px;
-    min-width: 613px;
+    border-radius: 5px 0 0 5px;
+    height: 442px;
+    min-width: 620px;
     z-index: 1;
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-}
-@media (max-width: 768px) {
-    .slider__container-info{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+
+    @media (max-width: 768px) {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         width: 100%;
         min-width: 320px;
         align-items: center;
     }
+
+    @media (max-width: 576px) {
+        height: 367px;
+    }
 }
+
 .slider__info {
-    padding: 53px 0 26px 63px;
+    padding: 54px 0 0 72px;
 }
 @media (max-width: 768px) {
     .slider__info {
@@ -74,7 +77,8 @@
 }
 @media (max-width: 576px) {
     .slider__info-title {
-        font-size: 30px;
+        font-size: 26px;
+        line-height: 53px;
     }
 }
 
@@ -85,26 +89,32 @@
 }
 @media (max-width: 576px) {
     .slider__info-subtitle {
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 7px;
     }
 }
 
 .slider__list {
-    margin: 16px 0 33px;
-    padding-left: 16px
+    margin: 14px 0 33px;
+    padding-left: 16px;
+    @media (max-width: 576px) { 
+        margin: 14px 0 15px;
+    }
 }
 
 .slider_list-item {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 28px;
     color: #364844;
     list-style: none;
     position: relative;
 }
 @media (max-width: 576px) {
     .slider_list-item {
-        font-size: 12px;
-        width: 200px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 20px;
+        margin-bottom: 9px;
     }
 }
 
@@ -112,23 +122,34 @@
     content: " ";
     position: absolute;
     left: -16px;
-    top: 7px;
+    top: 11px;
     height: 7px;
     width: 7px;
     border-radius: 50%;
     background: #1FA181;
+
+    @media (max-width: 576px) {
+        top: 7px;
+    }
 }
 
 .slider__price {
     display: flex;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+    @media (max-width: 576px) {
+        margin-bottom: 14px;
+    }
 }
 
 .slider__price-all {
     font-size: 20px;
     line-height: 26px;
     margin-right: 16px;
+    @media (max-width: 576px) {
+        font-size: 18px;
+        margin-right: 8px;
+    }
 }
 
 .slider__price-old {
@@ -149,47 +170,45 @@
 }
 
 .slider__buttons {
-    margin-left: 63px;
+    margin-left: 72px;
     display: flex;
 }
 @media (max-width: 768px) {
     .slider__buttons  {
         margin-left: 0;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
 .slider__button {
-    padding: 11px 59px;
+    padding: 11px 61px;
     margin-right: 14px;
-}
-@media (max-width: 768px) {
-    .slider__button  {
+
+    @media (max-width: 768px) {
         padding: 11px 100px;
         margin-bottom: 13px;
-
+    }
+    @media (max-width: 576px) {
+        padding: 11px 29px;
     }
 }
-@media (max-width: 576px) {
-    .slider__button  {
-        padding: 11px 74px;
-        margin-right: 32px;
 
-    }
-}
+
+
 .slider__image {
-    width: 712px;
     z-index: 0;
+    width: 705px;
     position: absolute;
     right: 0;
     height: 100%;
+    @media (max-width: 768px) {
+        position: static;
+        width: 100%;
+        height: 169px;
+        object-fit: cover;
+    } 
 }
 
-@media (max-width: 768px) {
-    .slider__image {
-        display: none;
-    }
-}
 
 
 .slider__nav {
