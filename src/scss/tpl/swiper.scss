@@ -6,10 +6,48 @@
     content: " " !important;
 }
 
+.swiper-button-next {
+    background-image: url(../image/icons/right-arrow.svg);
+    background-repeat: no-repeat;
+    left: 53px !important;
+    top: 0px !important;
+    width: 34px!important;
+    height: 25px!important;
+}
+.swiper-button-next:hover {
+    background-image: url(../image/icons/left-arrow-green.svg);
+    left: 53px !important;
+    top: -8px !important;
+    width: 34px!important;
+    height: 25px!important;
+}
+
+.swiper-button-prev {
+    background-image: url(../image/icons/left-arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -85px !important;
+    top: -8px !important;
+    width: 34px!important;
+    height: 34px!important;
+}
+
+.swiper-button-prev:hover {
+    background-image: url(../image/icons/left-arrow-green.svg);
+    transform: rotate(180deg);
+    left: -85px !important;
+    top: -8px !important;
+    width: 34px!important;
+    height: 34px!important;
+}
+
 .swiper-pagination {
     font-size: 18px;
     line-height: 23px;
-
+    display: flex;
+    top: -25px!important;
+    left: -14px!important;
+    
 }
 
 .swiper-pagination-total {
@@ -17,17 +55,5 @@
 }
 
 .swiper-pagination {
-    display: flex;
-}
 
-.image-next {
-    position: absolute;
-    left: 93px;
-    top: -5px;
-}
-
-.image-prev {
-    position: absolute;
-    right: 72px;
-    top: -13px;
 }

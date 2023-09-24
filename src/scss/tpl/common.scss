@@ -32,6 +32,12 @@ body {
     cursor: pointer;
 }
 
+.button-green:hover,
+.button-green:focus  {
+    background: #00D29F;
+    transition: all ease 0.5s;
+}
+
 .button-transparent {
     border-radius: 50px;
     cursor: pointer;
@@ -39,10 +45,29 @@ body {
     border: #0DBC91 solid 1px;
     color: #0DBC91;
 }
+
+.button-transparent:hover,
+.button-transparent:focus {
+    border-radius: 50px;
+    border: 1px solid #0DBC91;
+    background: #0DBC91;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+
 .button-white {
     border-radius: 50px;
     cursor: pointer;
     background-color: transparent;
     color: #0DBC91;
     background: #F6F6F6;
+}
+
+.button-white:hover,
+.button-white:focus {
+    border-radius: 50px;
+    background: #0DBC91;
+    color: #fff;
+    transition: all ease 0.5s;
 }

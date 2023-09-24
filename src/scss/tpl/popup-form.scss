@@ -37,11 +37,17 @@
     font-size: 18px;
     line-height: 1.22;
     border: 1px solid transparent;
+
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
 }
 
-@media (max-width: 767px) {
-.form__submit {
-    font-size: 14px;
-    line-height: 1.21;
+.form__submit:hover,
+.form__submit:active {
+    background: #00D29F;
+    transition: all ease 0.5s;
 }
-}
+
